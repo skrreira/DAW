@@ -204,8 +204,8 @@ nav {
 
 /* 📌 Estilos generales del footer */
 footer {
-    background-color: var(--color-fondo); /* Color de fondo oscuro */
-    padding: 40px 5%;
+    background-color: var(--color-secundario); /* Color de fondo oscuro */
+    padding: 0px;
     color: var(--color-texto);
     text-align: center;
 }
