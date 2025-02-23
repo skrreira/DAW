@@ -201,3 +201,93 @@ nav {
 .cta::after {
     display: none !important; /* Elimina completamente el subrayado */
 }
+
+/* 📌 Estilos generales del footer */
+footer {
+    background-color: var(--color-fondo); /* Color de fondo oscuro */
+    padding: 40px 5%;
+    color: var(--color-texto);
+    text-align: center;
+}
+
+/* 📌 Contenedor principal del footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Separa las secciones horizontalmente */
+    flex-wrap: wrap; /* Permite que se ajuste en pantallas pequeñas */
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* 📌 Cada sección del footer */
+.footer-container article {
+    flex: 1; /* Hace que cada sección tenga el mismo tamaño */
+    min-width: 180px; /* Evita que sean demasiado pequeñas */
+}
+
+/* 📌 Estilos para el logo */
+.footer-logo h3 {
+    color: var(--color-primario);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* 📌 Estilos para los títulos de cada sección */
+.footer-container h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: var(--color-primario);
+}
+
+/* 📌 Lista de enlaces */
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 8px;
+}
+
+.footer-container ul li a {
+    color: var(--color-texto-secundario);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-container ul li a:hover {
+    color: var(--color-primario);
+}
+
+/* 📌 Estilos para los Tags Populares */
+.footer-tags .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer-tags .tags a {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.footer-tags .tags a:hover {
+    background-color: #A71D2A;
+}
+
+/* 📌 Derechos reservados */
+footer p {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px 0;
+    background-color: var(--color-primario);
+    color: white;
+    font-size: 0.9rem;
+}
