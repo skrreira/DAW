@@ -216,6 +216,9 @@ footer {
     justify-content: space-between; /* Separa las secciones horizontalmente */
     flex-wrap: wrap; /* Permite que se ajuste en pantallas pequeñas */
     gap: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 20px;
     align-items: flex-start;
 }
 
@@ -285,9 +288,26 @@ footer {
 /* 📌 Derechos reservados */
 footer p {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 30px;   
     padding: 15px 0;
     background-color: var(--color-primario);
     color: white;
     font-size: 0.9rem;
+}
+
+.footer-logo p {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;   
+    padding: 15px 0;
+    background-color: var(--color-primario);
+    border-radius: 3px;
+    color: white;
+    font-size: 0.9rem;
+    transition: background 0.15s;
+}
+
+.footer-logo p:hover {
+    background-color: #A71D2A;
+    cursor: pointer;
 }
