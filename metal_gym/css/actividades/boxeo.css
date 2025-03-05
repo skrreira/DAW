@@ -1,0 +1,24 @@
+.boxeo-info {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.separador {
+    width: 3px; /* Grosor de la línea */
+    height: 500px; /* Alto del separador */
+    background-color: whitesmoke; /* Color de la línea */
+}
+
+.columna {
+    flex: 1;
+    padding: 20px;
+}
+
+.caroussel-boxeo
+
+#guante-boxeo {
+    width: 50%;
+    height: auto;
+}
