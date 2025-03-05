@@ -1,3 +1,8 @@
+.hero-boxeo {
+    background-image: url("/metal_gym/images/actividades/boxeo/fondo1.png");
+    background-size: cover;
+}
+
 .boxeo-info {
     display: flex;
     gap: 20px;
@@ -5,20 +10,44 @@
     align-items: stretch;
 }
 
-.separador {
-    width: 3px; /* Grosor de la línea */
-    height: 500px; /* Alto del separador */
-    background-color: whitesmoke; /* Color de la línea */
+.texto-boxeo p {
+    background-color: #383838;    
+    border-radius: 20px;
+    text-align: justify;
+    padding: 5%;
+    color: white;
+    font-size: min(2vw, 30px);
+    
 }
 
 .columna {
     flex: 1;
-    padding: 20px;
+    padding: 50px;
+    max-width: 800px;
 }
 
-.caroussel-boxeo
-
 #guante-boxeo {
-    width: 50%;
+    width: 30vw;
+    
     height: auto;
+    flex-shrink: 0;
+}
+
+/* 📌 Estilos para el carrousel */
+.caroussel-boxeo {
+    width: 80%;
+    overflow: hidden;
+    max-width: 1400px;
+
+}
+
+.caroussel-boxeo img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.cta {
+    padding: 15px 30px; /* Aumenta el espacio interno */
+    font-size: min (2vh, 30px); /* Tamaño de texto más grande */
 }
