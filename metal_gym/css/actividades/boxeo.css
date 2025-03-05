@@ -10,6 +10,13 @@
     align-items: stretch;
 }
 
+.texto-boxeo h2 {
+    color: white;
+    font-weight: bold;
+    text-transform: initial;
+    padding-bottom: 30px;
+}
+
 .texto-boxeo p {
     background-color: #383838;    
     border-radius: 20px;

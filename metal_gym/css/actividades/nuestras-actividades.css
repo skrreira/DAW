@@ -1,0 +1,34 @@
+.hero-actividades {
+    background-image: url("/metal_gym/images/actividades/fondo1.png");
+    background-size: cover;
+    height: 50vw;
+}
+
+.hero-actividades h1 {
+    padding-top: .5vw;
+    padding-bottom: 150px;
+    font-weight: bold;
+    font-size: 4vw;
+}
+
+.hero-actividades p {
+    color: white;
+    padding: 20px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    font-size: 1.8vw;
+}
+
+.actividades-container {
+    column-count: 3;
+    column-gap: 20px;
+    column-width: auto;
+    padding: auto;
+}
+
+.actividad img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+}
