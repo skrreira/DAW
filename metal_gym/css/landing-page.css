@@ -1,0 +1,61 @@
+.hero {
+    position: relative;
+    background-image: url('/metal_gym/assets/images/hero.png'); /* Reemplaza con la ruta correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+}
+
+.hero h1 {
+    margin: 0px 200px;
+    font-family: 'Anton', sans-serif;
+    font-size: 4rem; /* Ajusta el tamaño */
+    text-transform: uppercase; /* Mantener mayúsculas */
+    font-weight: bold;
+    letter-spacing: 1px; /* Espaciado entre letras */
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 
+                 -4px -4px 10px rgba(255, 0, 0, 0.3); /* Efecto de iluminación */
+
+}
+
+/* Capa semi-transparente */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Negro con opacidad del 60% */
+    z-index: -1;
+}
+
+.hero p{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #A71D2A;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.boton:hover {
+    background-color: #800f1a;
+}
