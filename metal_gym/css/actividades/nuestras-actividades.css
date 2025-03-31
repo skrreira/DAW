@@ -1,181 +1,117 @@
+/* Hero de Actividades */
 .hero-actividades {
-    background-image: url("/metal_gym/images/actividades/fondo1.png");
-    background-size: cover;
+    background: url("/metal_gym/images/actividades/fondo1.png") center/cover no-repeat;
     height: 50vw;
-    background-position: center;  /* Centra la imagen de fondo */
     max-height: 1000px;
+    min-height: 700px;
     text-align: center;
+    height: 100vh;
+    position: relative;
 }
 
 .hero-actividades h1 {
-    padding-top: .5vw;
-    padding-bottom: 150px;
+    padding-top: 0.5vw;
+    margin-bottom: 5%;
     font-weight: bolder;
-    font-size: 4vw;
-    text-align: center;         /* Centra el texto */
-
+    font-size: clamp(2rem, 6vw, 5rem);
 }
 
-/* Regla general para los párrafos dentro de .hero-actividades */
+/* Párrafos dentro de la sección Hero */
 .hero-actividades p {
     color: white;
     padding: 20px;
-    width: 60%;
-    position: relative;
-    left: 20%;
-    font-size: 1.8vw;
+    width: 80%;
+    font-size: 1em;
 }
 
-/* Caja sombreada para la sección Hero */
-.caja-sombreada {
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-    border-radius: 10px;                 /* Bordes redondeados */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
-    padding: 10px;                       
-    width: 80%;                          
-    margin: 20px auto;                      
-}
-
-/* Ajuste de los párrafos dentro de la caja para evitar propiedades heredadas */
-.caja-sombreada p {
-    left: 0;            
-    width: auto;          
-    margin: 0;       
-    font-size: 1.7rem;  
-    color: white;         
-}
-
+/* Contenedor de Actividades (usa columnas CSS) */
 .actividades-container {
     column-count: 3;
     column-gap: 20px;
-    column-width: auto;
-    padding: auto;
+}
+
+/* Estilos para cada Actividad */
+.actividad {
+    break-inside: avoid;
+    text-align: center;
 }
 
 .actividad img {
-    width: 70%;
     height: auto;
-    margin-bottom: 5%;
+    width: 80%;
+    margin: 5% 0;
 }
 
 .actividad h3 {
     font-size: 2em;
+    margin-bottom: 0;
 }
 
+/* Botón "Horarios" */
 .horarios {
     padding: 1.5%;
     font-size: 1.2em;
 }
 
+/* Centrado del body (si es necesario) */
 body {
-    margin: 0 auto;    /* Centra el contenido */
+    margin: 0 auto;
 }
 
-/* Ordenador */
-@media (min-width: 1280px) { 
-
-    /* Caja sombreada para la sección Hero */
-    .caja-sombreada {
-        width: 50%;                          
-    }
-
-    .caja-sombreada p {    
-        font-size: 1.3rem;  
-    }
-
-    .actividad h3 {    
-        margin-bottom: 5%;
-    }
-
-    .ver-mas {
-        font-size: 2em; /* Tamaño de texto más grande */ 
-        margin-bottom: 5%;
-        position: relative;
-        right: 0%;
-        width: 70%;
-    }
+/* Elemento translucido */
+.translucid {
+    background: transparent;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Tablets */
-@media (max-width: 1280px) { 
-    .actividad h3 {    
-        margin-bottom: 0%;
-    }
+.translucid p {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    color: #f1f1f1;
+    max-width: 1000px;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.translucid p:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.05);
+}
+
+.ver-mas {
+    font-size: 1em;
+    width: 80%;
+}
+
+/* Móviles grandes */
+@media (max-width: 768px) {
     .hero-actividades {
         height: 50%;
     }
-    
-    .hero-actividades h1 {
-        padding-top: .5vw;
-        padding-bottom: .5vw;
-        font-size: 2em;
-    }
 
-    .hero-actividades p {
-        width: 80%;
-        left: 10%;
-        font-size: 1em;
-    }
-    
-    .actividades-container {
-        column-count: 3;
-    }
-
-    .actividad img {
-        width: 80%;
-        height: auto;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-
-    .ver-mas {
-        font-size: 1em; /* Tamaño de texto más grande */ 
-        margin-top: 0%;
-        margin-bottom: 5%;
-        right: 0%;
-        width: 80%;
-    }
-}
-
-/* Móviles grandes (pequeño son 480) */
-@media (max-width: 768px) { 
-    .actividad h3 {    
-        margin-top: 5%;
-        margin-bottom: 0%;
-    }
-
-    .hero-actividades {
-        height: 50%;
-    }
-    
-    .hero-actividades h1 {
-        padding-top: .5vw;
-        padding-bottom: .5vw;
-        font-size: 2em;
-    }
-
-    .hero-actividades p {
-        width: 80%;
-        left: 10%;
-        font-size: 1em;
-    }
-    
     .actividades-container {
         column-count: 1;
     }
 
     .actividad img {
-        position: relative;
         width: 50%;
-        height: auto;
         margin-top: 5%;
     }
 
     .ver-mas {
-        font-size: 1em; /* Tamaño de texto más grande */ 
-        margin-top: 0%;
-        margin-bottom: 5%;
+        font-size: 1em;
         width: 50%;
+    }
+
+    .actividad h3 {
+        margin: 5% 0 0;
     }
 }
