@@ -24,6 +24,9 @@
     font-size: 1em;
 }
 
+.contenedor-centrado{
+    margin-top: 10%;
+}
 /* Contenedor de Actividades (usa columnas CSS) */
 .actividades-container {
     column-count: 3;
