@@ -172,7 +172,62 @@ input:-webkit-autofill:active {
 }
 
   
-  /* ========== BREAKPOINTS (YA HEREDADOS) ========== */
-  /* Ya usas @media en tu sistema flexible-grid para .col-xx clases */
+/* ========== BREAKPOINTS FLEXIBLE GRID ========== */
+
+/* Tablets (máximo 991px) */
+@media (max-width: 991px) {
+    .col-50 {
+      width: 100%;
+      float: none;
+      margin-bottom: 1rem;
+    }
+  
+    .col-100 {
+      width: 100%;
+      float: none;
+    }
+  
+    .formulario-box {
+      padding: 1.5rem;
+    }
+  
+    .formulario-contacto {
+      padding: 3rem 1rem;
+    }
+  
+    .hero-contacto h1 {
+      font-size: 2.2rem;
+    }
+  }
+  
+  /* Móviles (máximo 600px) */
+  @media (max-width: 600px) {
+    .formulario-box input,
+    .formulario-box select,
+    .formulario-box textarea {
+      font-size: 0.95rem;
+      padding: 0.8rem;
+    }
+  
+    .formulario-contacto h2 {
+      font-size: 1.5rem;
+    }
+  
+    .formulario-box .btn-rojo {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+  
+    .hero-contacto h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-contacto p {
+      font-size: 0.95rem;
+      padding: 0 0.5rem;
+    }
+  }
+  
   
   
