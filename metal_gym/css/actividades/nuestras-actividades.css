@@ -2,6 +2,9 @@
     background-image: url("/metal_gym/images/actividades/fondo1.png");
     background-size: cover;
     height: 50vw;
+    background-position: center;  /* Centra la imagen de fondo */
+    max-height: 1000px;
+    text-align: center;
 }
 
 .hero-actividades h1 {
@@ -9,8 +12,11 @@
     padding-bottom: 150px;
     font-weight: bolder;
     font-size: 4vw;
+    text-align: center;         /* Centra el texto */
+
 }
 
+/* Regla general para los párrafos dentro de .hero-actividades */
 .hero-actividades p {
     color: white;
     padding: 20px;
@@ -18,6 +24,25 @@
     position: relative;
     left: 20%;
     font-size: 1.8vw;
+}
+
+/* Caja sombreada para la sección Hero */
+.caja-sombreada {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    border-radius: 10px;                 /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 10px;                       
+    width: 80%;                          
+    margin: 20px auto;                      
+}
+
+/* Ajuste de los párrafos dentro de la caja para evitar propiedades heredadas */
+.caja-sombreada p {
+    left: 0;            
+    width: auto;          
+    margin: 0;       
+    font-size: 1.7rem;  
+    color: white;         
 }
 
 .actividades-container {
@@ -43,12 +68,21 @@
 }
 
 body {
-    max-width: 1920px; /* La página no se expandirá a más de 1920px */
-    min-width: 480px; /* La página no se reducirá a menos de 480px */
+    margin: 0 auto;    /* Centra el contenido */
 }
 
 /* Ordenador */
-@media (max-width: 1920px) { 
+@media (min-width: 1280px) { 
+
+    /* Caja sombreada para la sección Hero */
+    .caja-sombreada {
+        width: 50%;                          
+    }
+
+    .caja-sombreada p {    
+        font-size: 1.3rem;  
+    }
+
     .actividad h3 {    
         margin-bottom: 5%;
     }
@@ -133,18 +167,15 @@ body {
 
     .actividad img {
         position: relative;
-        left: 20.5%;
-        width: 40%;
+        width: 50%;
         height: auto;
         margin-top: 5%;
-        margin-bottom:7%;
     }
 
     .ver-mas {
         font-size: 1em; /* Tamaño de texto más grande */ 
-        margin-top: 2%;
+        margin-top: 0%;
         margin-bottom: 5%;
-        right: 20%;
-        width: 40%;
+        width: 50%;
     }
 }
