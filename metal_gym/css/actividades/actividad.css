@@ -1,30 +1,30 @@
-.hero-boxeo {
+.hero {
     background-image: url("/metal_gym/images/actividades/boxeo/fondo1.png");
     background-size: cover;
+    background-position: center;  /* Centra la imagen de fondo */
 }
 
-.boxeo-info {
+.info {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: stretch;
 }
 
-.texto-boxeo h2 {
+.texto h2 {
     color: white;
     font-weight: bold;
     text-transform: initial;
     padding-bottom: 30px;
 }
 
-.texto-boxeo p {
+.texto p {
     background-color: #383838;    
     border-radius: 20px;
     text-align: justify;
     padding: 5%;
     color: white;
     font-size: min(2vw, 30px);
-    
 }
 
 .columna {
@@ -33,28 +33,63 @@
     max-width: 800px;
 }
 
-#guante-boxeo {
+#icono {
     width: 30vw;
-    
-    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; /* Opcional: recorta la imagen si no es cuadrada */
     flex-shrink: 0;
 }
 
 /* 📌 Estilos para el carrousel */
-.caroussel-boxeo {
+.caroussel {
     width: 80%;
     overflow: hidden;
     max-width: 1400px;
 
 }
 
-.caroussel-boxeo img {
+.caroussel img {
     width: 100%;
     height: 600px;
     object-fit: cover;
 }
 
 .cta {
+    margin-top: 30px;
     padding: 15px 30px; /* Aumenta el espacio interno */
     font-size: min (2vh, 30px); /* Tamaño de texto más grande */
+}
+
+
+.translucid{
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+/* Móviles grandes (pequeño son 480) */
+@media (max-width: 768px) { 
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto p {
+        font-size: 17px;
+    }
+
+    #icono {
+        width: 80%;
+        
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    .columna {
+        flex: 1;
+        padding: 10px;
+        max-width: 800px;
+    }
 }
