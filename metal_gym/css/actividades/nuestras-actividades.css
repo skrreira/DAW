@@ -1,11 +1,10 @@
 /* Hero de Actividades */
 .hero-actividades {
     background: url("/metal_gym/images/actividades/fondo1.png") center/cover no-repeat;
-    height: 50vw;
+    height: 100vh;
     max-height: 1000px;
     min-height: 700px;
     text-align: center;
-    height: 100vh;
     position: relative;
 }
 
@@ -24,40 +23,74 @@
     font-size: 1em;
 }
 
-.contenedor-centrado{
+.contenedor-centrado {
     margin-top: 10%;
 }
+
 /* Contenedor de Actividades (usa columnas CSS) */
 .actividades-container {
     column-count: 3;
-    column-gap: 20px;
+    column-gap: 30px;
     padding: 15% 0%;
 }
 
-/* Estilos para cada Actividad */
+/* === Estilos tipo Card para cada Actividad === */
 .actividad {
     break-inside: avoid;
     text-align: center;
+    background-color: #111;
+    color: white;
+    padding: 2rem;
+    margin: 1rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 400px; /* o el valor que se vea bien con tus imágenes */
+
+}
+.actividad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
 }
 
 .actividad img {
+    width: 100%;
     height: auto;
-    width: 80%;
-    margin: 5% 0;
+    margin-top: 5%;
+    margin-bottom: 1rem;
 }
 
 .actividad h3 {
-    font-size: 2em;
-    margin-bottom: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
 }
 
-/* Botón "Horarios" */
+/* Botón "Ver más" dentro de cada card */
+.actividad .ver-mas {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s ease;
+}
+.actividad .ver-mas:hover {
+    background-color: #ff1a26;
+}
+
+/* Botón general "Horarios" */
 .horarios {
     padding: 1.5%;
     font-size: 1.2em;
 }
 
-/* Centrado del body (si es necesario) */
+/* Centrado del body */
 body {
     margin: 0 auto;
 }
@@ -92,9 +125,17 @@ body {
 
 .ver-mas {
     font-size: 1em;
-    width: 80%;
+    width: 100%;
 }
 
+.actividad h3 {
+    margin: 5% 0 0;
+}
+
+#boxeo {
+    position: relative;
+    bottom: 15px;
+}
 /* Móviles grandes */
 @media (max-width: 768px) {
     .hero-actividades {
@@ -103,19 +144,5 @@ body {
 
     .actividades-container {
         column-count: 1;
-    }
-
-    .actividad img {
-        width: 50%;
-        margin-top: 5%;
-    }
-
-    .ver-mas {
-        font-size: 1em;
-        width: 50%;
-    }
-
-    .actividad h3 {
-        margin: 5% 0 0;
     }
 }
