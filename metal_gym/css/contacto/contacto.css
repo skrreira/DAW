@@ -1,0 +1,233 @@
+/* ========== HERO CONTACTO ========== */
+.hero-contacto {
+    background-color: #191919;
+    padding: 4rem 2rem 2rem;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  .hero-contacto p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 1.05rem;
+
+  }
+  
+  .seccion-contacto {
+    background: url('/metal_gym/images/contacto/bg-contacto.png') center/cover no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    position: relative;
+    z-index: 0;
+  }
+  
+  /* Elimina el fondo oscuro que tapa el fondo real */
+  .hero-contacto,
+  .formulario-contacto {
+    background: transparent;
+  }
+  
+  /* Opcional: overlay si el fondo es muy claro */
+  .seccion-contacto::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25); /* oscurece el fondo ligeramente */
+    z-index: -1;
+  }
+  
+  .section-contacto > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* ========== FORMULARIO SECCIÓN ========== */
+  .formulario-contacto {
+    padding: 0.5rem 1.5rem;
+    padding-bottom: 4rem;
+    color: white;
+  }
+  
+  .formulario-contacto h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #d33;
+    text-transform: uppercase;
+  }
+  
+  /* ===== FORM BOX ===== */
+  .formulario-box {
+    background: rgba(0, 0, 0, 0.6); /* Fondo transparente con oscuridad */
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .formulario-box:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.15);
+  }
+  
+  .formulario-box p {
+    margin-bottom: 40px;
+  }
+  
+  .formulario-box label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #f5f5f5;
+    font-weight: 500;
+  }
+  
+  .formulario-box input,
+  .formulario-box select,
+  .formulario-box textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    margin-bottom: 1.2rem;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #eee;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .formulario-box input:focus,
+  .formulario-box select:focus,
+  .formulario-box textarea:focus {
+    outline: none;
+    border-color: #a71d2a;
+    box-shadow: 0 0 0 0.2rem rgba(167, 29, 42, 0.3);
+  }
+  
+  /* ===== Checkbox y botón ===== */
+  .formulario-box input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  .formulario-box a {
+    color: #d33;
+    text-decoration: none;
+  }
+  
+  .formulario-box .btn-rojo {
+    margin-top: 1rem;
+    padding: 1rem 2.5rem;
+    background-color: #a71d2a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formulario-box .btn-rojo:hover {
+    background-color: #8e1a24;
+  }
+  
+  [class^="col-"] {
+    float: left;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+  
+  .col-50 {
+    width: 50%;
+  }
+  
+  .col-100 {
+    width: 100%;
+  }
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,   
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #eee !important;
+  box-shadow: 0 0 0px 1000px #1a1a1a inset !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+  
+/* ========== BREAKPOINTS FLEXIBLE GRID ========== */
+
+/* Tablets (máximo 991px) */
+@media (max-width: 991px) {
+    .col-50 {
+      width: 100%;
+      float: none;
+      margin-bottom: 1rem;
+    }
+  
+    .col-100 {
+      width: 100%;
+      float: none;
+    }
+  
+    .formulario-box {
+      padding: 1.5rem;
+    }
+  
+    .formulario-contacto {
+      padding: 3rem 1rem;
+    }
+  
+    .hero-contacto h1 {
+      font-size: 2.2rem;
+    }
+  }
+  
+  /* Móviles (máximo 600px) */
+  @media (max-width: 600px) {
+    .formulario-box input,
+    .formulario-box select,
+    .formulario-box textarea {
+      font-size: 0.95rem;
+      padding: 0.8rem;
+    }
+  
+    .formulario-contacto h2 {
+      font-size: 1.5rem;
+    }
+  
+    .formulario-box .btn-rojo {
+      width: 100%;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+  
+    .hero-contacto h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-contacto p {
+      font-size: 0.95rem;
+      padding: 0 0.5rem;
+    }
+  }
+  
+  
+  

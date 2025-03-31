@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metal Gym - Transforma tu Cuerpo</title>
     <link rel="stylesheet" href="/metal_gym/css/general.css"> <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="/metal_gym/css/contacto/contacto.css"> <!-- Enlace al CSS -->
 </head>
 <body>
 
@@ -23,42 +24,83 @@
         </nav>
     </header>
 
+    
     <!-- Sección Hero de Contacto -->
-    <section class="hero-contacto">
-        <div class="contenido-contacto">
-            <h1>CONTACTA CON NOSOTROS</h1>
-            <p>
-                ¿Tienes alguna pregunta o necesitas más información? Estamos aquí para ayudarte. 
-                No dudes en ponerte en contacto con nosotros y te responderemos lo antes posible.
-            </p>
-        </div>
-    </section>
-
-    <!-- Sección de Formulario de Contacto -->
-    <section class="formulario-contacto">
-        <form> <!-- Formulario de contacto: añadir acción con JS-->
-            <div class="campo">
-                <label for="nombre">Nombre y apellidos</label>
-                <input type="text" id="nombre" name="nombre" required>
+    <section class="seccion-contacto">
+        <section class="hero-contacto">
+            <div class="contenido-contacto">
+                <h1>CONTACTA CON NOSOTROS</h1>
+                
             </div>
+        </section>
 
-            <div class="campo">
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required>
+        <section class="formulario-contacto">
+            <div class="container">
+                <div class="row">
+                <!-- Columna Formulario -->
+                <div class="col-100">
+                    <form class="formulario-box">
+                        <p>
+                            ¿Tienes alguna pregunta o necesitas más información? Estamos aquí para ayudarte.
+                            No dudes en ponerte en contacto con nosotros y te responderemos lo antes posible.
+                        </p>
+                    <div class="row">
+                        <div class="col-50">
+                        <label for="nombre">Nombre y apellidos</label>
+                        <input type="text" id="nombre" placeholder="Ej: Ana García">
+                        </div>
+                        <div class="col-50">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" placeholder="Ej: ana@email.com">
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-50">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" placeholder="Ej: +34 678 123 456">
+                        </div>
+                        <div class="col-50">
+                        <label for="motivo">Motivo</label>
+                        <select id="motivo">
+                            <option>Selecciona una opción</option>
+                            <option>Consulta</option>
+                            <option>Horarios</option>
+                            <option>Entrenamientos</option>
+                        </select>
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-100">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <!-- Checkbox y texto en una fila -->
+                        <div class="col-100">
+                        <div class="row">
+                            <div class="col-10 checkbox-align">
+                            <input type="checkbox" id="privacidad">
+                            </div>
+                            <div class="col-90">
+                            <label for="privacidad">Acepto la <a href="#">política de privacidad</a></label>
+                            </div>
+                        </div>
+                        </div>
+                    
+                        <!-- Botón centrado -->
+                        <div class="col-100 text-center">
+                        <button type="submit" class="btn-rojo">ENVIAR</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                </div>
             </div>
-
-            <div class="campo-checkbox">
-                <input type="checkbox" id="privacidad" name="privacidad" required>
-                <label for="privacidad">Acepto la política de privacidad de Metal Gym S.A.</label>
-            </div>
-
-            <button type="submit" class="btn">Enviar</button>
-        </form>
-
-        <!-- Imagen representativa al lado del formulario -->
-        <div class="imagen-contacto">
-            <img src="img/contacto-movil.jpg" alt="Ilustración de contacto">
-        </div>
+        </section>
     </section>
     
     <!-- Footer -->
