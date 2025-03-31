@@ -1,6 +1,6 @@
 /* Hero de Actividades */
 .hero-actividades {
-    background: url("/metal_gym/images/actividades/fondo1.png") center/cover no-repeat;
+    background: url("/metal_gym/images/actividades/fondo-actividades-hero-blur.png") center/cover no-repeat;
     height: 100vh;
     max-height: 1000px;
     min-height: 700px;
@@ -31,7 +31,9 @@
 .actividades-container {
     column-count: 3;
     column-gap: 30px;
-    padding: 15% 0%;
+    padding: 15% 5%;
+    background-image: url("/metal_gym/images/actividades/fondo-actividades.png");
+    background-size: cover;
 }
 
 /* === Estilos tipo Card para cada Actividad === */
@@ -41,7 +43,7 @@
     background-color: #111;
     color: white;
     padding: 2rem;
-    margin: 1rem 1rem;
+    margin: 1rem 2%;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -59,6 +61,7 @@
     height: auto;
     margin-top: 5%;
     margin-bottom: 1rem;
+    border-radius: 15px;
 }
 
 .actividad h3 {
