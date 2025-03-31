@@ -44,13 +44,7 @@
     margin: 0 auto 4rem;
     backdrop-filter: none; /* por si había desenfoque */
   }
-  
-  
-  .tarifas-intro h1 {
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
+
   
   .tarifas-intro p {
     background: rgba(0, 0, 0, 0.25); /* más sutil */
@@ -70,7 +64,7 @@
 
   .tarifas-intro p:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 40px rgba(255, 0, 0, 0.05);
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.15);
   }
 
   
@@ -95,7 +89,7 @@
   }
   
   .plan:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
   }
   
