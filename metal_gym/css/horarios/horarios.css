@@ -1,36 +1,35 @@
 /* ========== HERO HORARIOS ========== */
 .hero-horarios {
-    background: linear-gradient(to right, #1a1a1a, #111);
+    background-image: url('/metal_gym/images/horarios/bg-horario.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
     color: white;
     text-align: center;
     padding: 4rem 2rem 2rem;
   }
   
-  .hero-horarios h1 {
-    font-size: 2.8rem;
-    color: #d33;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-  }
+
   
-  .hero-horarios p {
-    font-size: 1.1rem;
-    color: #ccc;
-    margin: 0 auto;
-    max-width: 800px;
-  }
   
   /* ========== CALENDARIO DE HORARIOS ========== */
   .tabla-horarios {
     padding: 4rem 2rem;
+    padding-bottom: 10rem;
     display: flex;
     justify-content: center;
-    background: url('/metal_gym/images/horarios/bg-horario.png') center/cover no-repeat;
+    background-image: url('/metal_gym/images/horarios/bg-horario.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment: fixed;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(2px);
   }
   
   .tabla-horarios table {
+    background-image: url();
     width: 100%;
     max-width: 1100px;
     border-collapse: collapse;
@@ -64,11 +63,70 @@
     background-color: rgba(255, 255, 255, 0.05);
     transition: background 0.3s ease;
   }
+
+  .tabla-horarios td a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+    font: inherit;
+  }
+
+  .tabla-horarios td a:hover {
+    color: inherit;
+    text-decoration: none;
+  }
   
-  .tabla-horarios td:not(:first-child):hover {
-    background-color: rgba(167, 29, 42, 0.15);
+  
+  /* Colores por tipo de actividad */
+td[data-actividad="Boxeo"] {
+    background-color: rgba(255, 0, 0, 0.07); /* rojo suave */
+  }
+  
+  td[data-actividad="Yoga"] {
+    background-color: rgba(135, 206, 250, 0.08); /* azul claro suave */
+  }
+  
+  td[data-actividad="BJJ"] {
+    background-color: rgba(255, 255, 102, 0.08); /* amarillo pastel suave */
+  }
+  
+ /* Efecto intensificado en hover */
+td[data-actividad="Boxeo"]:hover {
+    background-color: rgba(255, 0, 0, 0.15);
+  }
+  
+  td[data-actividad="Yoga"]:hover {
+    background-color: rgba(135, 206, 250, 0.15); /* azul claro */
+  }
+  
+  td[data-actividad="BJJ"]:hover {
+    background-color: rgba(255, 215, 0, 0.15); /* amarillo suave */
+  }
+
+  .tabla-horarios td[data-actividad] {
     cursor: pointer;
   }
+  
+
+  .tabla-horarios td {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+    
+
+
+  .tabla-horarios table {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8); /* más profundidad */
+    transition: box-shadow 0.3s ease;
+  }
+  
+  
+  .tabla-horarios th,
+.tabla-horarios td {
+  width: 120px; /* o el ancho que más se ajuste */
+}
+
   
   .tabla-horarios td.vacio {
     background-color: rgba(255,255,255,0.02);
