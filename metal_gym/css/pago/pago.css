@@ -100,7 +100,7 @@
     transition: background 0.3s ease;
     background-color: rgb(77, 131, 68);
     color: white;
-    text-transform: uppercase;
+    text-transform: uppercase;  
   }
   
   .formulario-pago .btn:hover {

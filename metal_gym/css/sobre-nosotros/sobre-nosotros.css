@@ -1,0 +1,230 @@
+/* ========== HERO SOBRE NOSOTROS ========== */
+.hero-sobre-nosotros {
+    background: url('/metal_gym/images/sobre-nosotros/sobre-nosotros-bg.png') center/cover no-repeat;
+    background-attachment: local;
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  .hero-sobre-nosotros::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65); /* oscurece el fondo */
+    z-index: 0;
+  }
+  
+  .hero-sobre-nosotros > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-sobre-nosotros h1 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #d33;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .hero-sobre-nosotros h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #d33;
+    margin: 1rem auto 0;
+  }
+  
+  .hero-sobre-nosotros p {
+    max-width: 850px;
+    margin: 1.5rem auto 0;
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.8;
+  }
+  
+  /* ========== HISTORIA ========== */
+  .historia {
+    padding: 5rem 2rem;
+    background: linear-gradient(to right, #121212, #1a1a1a);
+    color: #eee;
+    text-align: center;
+  }
+  
+  .historia h2 {
+    font-size: 2.2rem;
+    color: #d33;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .historia h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #d33;
+    margin: 1rem auto 0;
+  }
+  
+  .historia p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.7;
+  }
+  
+  /* ========== MISIÓN Y VALORES ========== */
+  .mision-valores {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 5rem 2rem;
+  }
+  
+  .mision-valores h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #d33;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .mision-valores h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #d33;
+    margin: 1rem auto 0;
+  }
+  
+  .mision-valores-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .mision, .valores {
+    flex: 1 1 400px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    max-width: 650px;
+    border-radius: 12px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  }
+
+  .mision:hover,
+.valores:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.15);
+  background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+}
+  
+  .mision h3, .valores h3 {
+    color: #d33;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .valores ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .valores li {
+    margin-bottom: 1rem;
+    color: #ccc;
+  }
+  
+  /* ========== EQUIPO ========== */
+  .nuestro-equipo {
+    background: radial-gradient(ellipse at top left, #181818, #121212);
+    padding: 5rem 2rem;
+    padding-bottom: 8rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .nuestro-equipo h2 {
+    font-size: 2.2rem;
+    color: #d33;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .equipo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .entrenador {
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.03);
+  }
+  
+  .entrenador:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+  }
+  
+  .entrenador img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .entrenador h3 {
+    color: #d33;
+    margin-bottom: 0.5rem;
+  }
+  
+  .entrenador p {
+    color: #bbb;
+    font-size: 1rem;
+  }
+  .frase-inspiradora {
+    font-style: italic;
+    color: #888;
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    opacity: 0.85;
+  }
+  .historia {
+    padding: 5rem 2rem;
+    background: linear-gradient(to right, #121212, #1a1a1a);
+    color: #eee;
+    text-align: center;
+    transition: background 0.6s ease, box-shadow 0.6s ease;
+  }
+  
+  
+  
+  
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 768px) {
+    .hero-sobre-nosotros h1 {
+      font-size: 2.4rem;
+    }
+  
+    .mision-valores-container,
+    .equipo-container {
+      flex-direction: column;
+    }
+  }
+  
