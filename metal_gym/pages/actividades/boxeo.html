@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metal Gym - Transforma tu Cuerpo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/metal_gym/css/general.css"> <!-- Enlace al CSS -->
     <link rel="stylesheet" href="/metal_gym/css/actividades/actividad.css">
 </head>
+
 <body>
 
     <!-- Encabezado con navegación -->
@@ -23,39 +27,89 @@
             </ul>
         </nav>
     </header>
-    
+
     <!-- Sección Hero de Boxeo -->
-    <section class="hero">
+    <section class="hero" style="background-image: url(/metal_gym/images/actividades/boxeo/sparring-blur.png);">
         <div class="contenido">
             <h1>BOXEO</h1>
             <div class="info">
                 <div class="texto columna">
                     <h2>¿Quieres boxear?</h2>
-                    <p>
-                        En Metal Gym, ofrecemos clases de boxeo impartidas por el reconocido profesor Miguel Leal. 
-                        Disfruta de nuestras instalaciones de primer nivel y entrena en un ambiente motivador, diseñado 
-                        para ayudarte a alcanzar tus objetivos. Contamos con rings y sacos disponibles para la práctica. 
-                        ¡Únete hoy mismo y comienza tu camino en el boxeo con nosotros!
-                    </p>
+                    <div class="translucid">
+                        <p>
+                            En Metal Gym, ofrecemos clases de boxeo impartidas por el reconocido profesor Miguel Leal.
+                            Disfruta de nuestras instalaciones de primer nivel y entrena en un ambiente motivador,
+                            diseñado
+                            para ayudarte a alcanzar tus objetivos. Contamos con rings y sacos disponibles para la
+                            práctica.
+                            ¡Únete hoy mismo y comienza tu camino en el boxeo con nosotros!
+                        </p>
+                    </div>
                 </div>
-                <img id="icono" class="columna" src="/metal_gym/images/actividades/boxeo/icono_boxeo.png" alt="Guante de Boxeo">
+                <img id="icono" class="columna" src="/metal_gym/images/actividades/boxeo/icono_boxeo.png"
+                    alt="Clase de Boxeo">
             </div>
             <a href="/metal_gym/pages/pago.html" class="btn cta">¡Apúntate ya!</a>
         </div>
     </section>
 
-    <!-- Sección de Clases de Boxeo -->
-    <section class="clases">
-        <h2>Nuestras clases</h2>
-        <div class="caroussel">
-            <img src="/metal_gym/images/actividades/boxeo/caroussel1.png" alt="Clase de boxeo 1">
-            <img src="/metal_gym/images/actividades/boxeo/caroussel2.png" alt="Clase de boxeo 2">
-            <img src="/metal_gym/images/actividades/boxeo/caroussel3.png" alt="Clase de boxeo 3">
+    <!-- Carrusel centrado -->
+    <div class="carousel-centrado align-items-center justify-content-center"
+        style="min-height: 100vh; background-image: url(/metal_gym/images/actividades/boxeo/fondo.png);">
+        <div class="mx-auto px-3" style="max-width: 900px;">
+            <div class="translucid text-center mb-4">
+                <div>
+                    <h2>Instalaciones de Boxeo</h2>
+                    <p>Descubre nuestras instalaciones de boxeo, diseñadas para ofrecerte la mejor experiencia de
+                        entrenamiento.</p>
+                </div>
+            </div>
+            <div class="mx-auto carousel-wrapper">
+                <div id="carouselInstalaciones" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/metal_gym/images/actividades/boxeo/caroussel1.png" class="d-block w-100"
+                                alt="Instalación 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/metal_gym/images/actividades/boxeo/caroussel2.png" class="d-block w-100"
+                                alt="Instalación 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/metal_gym/images/actividades/boxeo/caroussel3.png" class="d-block w-100"
+                                alt="Instalación 3">
+                        </div>
+                    </div>
+
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselInstalaciones" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#carouselInstalaciones" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselInstalaciones" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- Flechas -->
+                    <!-- Flechas de navegación -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInstalaciones"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon custom-arrow" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInstalaciones"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon custom-arrow" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="/metal_gym/pages/horarios.html" class="btn cta">Ver horarios</a>
+                </div>
+            </div>
         </div>
-        <a href="/metal_gym/pages/horarios.html" class="btn cta">Ver horarios</a>
-    </section>
-    
-    
+    </div>
+
+
     <!-- Footer -->
     <footer>
         <section class="footer-container">
@@ -114,4 +168,5 @@
     </footer>
 
 </body>
+
 </html>
