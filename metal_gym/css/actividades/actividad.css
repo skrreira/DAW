@@ -1,7 +1,3 @@
-
-
-
-
 .hero {
     background-image: url("/metal_gym/images/actividades/yoga/fondo_yoga_blur.png");
     background-size: cover;               /* Mantiene proporción */
@@ -11,7 +7,6 @@
     min-height: 100vh;                    /* O lo que necesites para el diseño */
     position: relative;                   /* Por si añades contenido posicionado */
     overflow: visible;                    /* Asegura que no se oculte la parte que sobresale por arriba */
-    padding-bottom: 20%;
 }
 
 .carousel-centrado {
