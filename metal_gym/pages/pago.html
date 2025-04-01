@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metal Gym - Transforma tu Cuerpo</title>
     <link rel="stylesheet" href="/metal_gym/css/general.css"> <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="/metal_gym/css/pago/pago.css"> <!-- Enlace al CSS -->
 </head>
 <body>
 
@@ -23,60 +24,66 @@
         </nav>
     </header>
 
-    <!-- Sección Hero de Pago -->
-    <section class="hero-pago">
-        <div class="contenido-pago">
+    <!-- Sección de Formulario de Pago -->
+    <!-- Sección de Formulario de Pago -->
+    <section class="formulario-pago">
+        
+        <form>
             <h1>¡YA CASI ESTÁ!</h1>
             <p>
                 ¿Tienes alguna pregunta o necesitas más información? Estamos aquí para ayudarte. 
                 No dudes en ponerte en contacto con nosotros y te responderemos lo antes posible.
             </p>
+        <!-- Fila: Nombre + Mes -->
+        <div class="fila-doble">
+            <div class="campo">
+            <label for="nombre">Nombre y apellidos</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana García" required>
+            </div>
+            <div class="campo">
+            <label for="mes">Mes a pagar</label>
+            <input type="month" id="mes" name="mes" required>
+            </div>
         </div>
-    </section>
-
-    <!-- Sección de Formulario de Pago -->
-    <section class="formulario-pago">
-        <form> <!-- Formulario de pago: añadir acción con JS-->
+    
+        <!-- Fila: Email + Teléfono -->
+        <div class="fila-doble">
             <div class="campo">
-                <label for="nombre">Nombre y apellidos</label>
-                <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Ej: ana@email.com" required>
             </div>
-
             <div class="campo">
-                <label for="mes">Mes a pagar</label>
-                <input type="month" id="mes" name="mes" required>
+            <label for="telefono">Teléfono de contacto</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +34 678 123 456" required>
             </div>
-
+        </div>
+    
+        <!-- Fila: Tarifa + Precio -->
+        <div class="fila-doble">
             <div class="campo">
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required>
+            <label for="tarifa">Tarifa</label>
+            <select id="tarifa" name="tarifa" required>
+                <option disabled selected value="">Selecciona una opción</option>
+                <option value="basico">Plan Básico - 20€/mes</option>
+                <option value="estandar">Plan Estándar - 30€/mes</option>
+                <option value="premium">Plan Premium - 50€/mes</option>
+            </select>
             </div>
-
             <div class="campo">
-                <label for="telefono">Teléfono de contacto</label>
-                <input type="tel" id="telefono" name="telefono" required>
+            <label for="precio">Precio</label>
+            <input type="text" id="precio" name="precio" placeholder="Se rellenará automáticamente" readonly>
             </div>
-
-            <div class="campo">
-                <label for="tarifa">Tarifa</label>
-                <select id="tarifa" name="tarifa" required>
-                    <option value="basico">Plan Básico - 20€/mes</option>
-                    <option value="estandar">Plan Estándar - 30€/mes</option>
-                    <option value="premium">Plan Premium - 50€/mes</option>
-                </select>
-            </div>
-
-            <div class="campo">
-                <label for="precio">Precio</label>
-                <input type="text" id="precio" name="precio" readonly>
-            </div>
-
-            <div class="botones-pago">
-                <button type="submit" class="btn">Proceder al pago</button>
-                <button type="button" class="btn cancelar">Cancelar</button>
-            </div>
+        </div>
+    
+        <!-- Botones -->
+        <div class="botones-pago">
+            <button type="submit" class="btn">Proceder al pago</button>
+            <button type="button" class="btn cancelar">Cancelar</button>
+        </div>
         </form>
     </section>
+    
+      
     
     
     <!-- Footer -->

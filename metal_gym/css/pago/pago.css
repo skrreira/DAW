@@ -1,0 +1,163 @@
+
+  /* ========== FORMULARIO DE PAGO ========== */
+  .formulario-pago {
+    padding: 4rem 1.5rem;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    background: url('/metal_gym/images/pago/bg-pago.png') center/cover no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+  }
+
+  .formulario-pago p{
+    padding: 2rem 4rem;   
+    padding-top: 0rem;
+  }
+  
+  .formulario-pago form {
+    background: rgba(0, 0, 0, 0.6); /* Más opaco para resaltar */
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 1200px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .formulario-pago form:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.15);
+  }
+  
+  
+  .formulario-pago .campo {
+    margin-bottom: 1.5rem;
+  }
+  
+  .formulario-pago label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #f5f5f5;
+  }
+  
+  .formulario-pago input,
+  .formulario-pago select {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #eee;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .formulario-pago input:focus,
+  .formulario-pago select:focus {
+    outline: none;
+    border-color: #a71d2a;
+    box-shadow: 0 0 0 0.2rem rgba(167, 29, 42, 0.3);
+  }
+
+  .formulario-pago form {
+    animation: fadeInUp 0.7s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  /* Botones */
+  .botones-pago {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    margin-top: 3rem;
+  }
+  
+  .formulario-pago .btn {
+    flex: 1;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    background-color: #a71d2a;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .formulario-pago .btn:hover {
+    background-color: #8e1a24;
+  }
+  
+  .formulario-pago .btn.cancelar {
+    background-color: #444;
+  }
+  
+  .formulario-pago .btn.cancelar:hover {
+    background-color: #555;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus, 
+  input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-box-shadow: 0 0 0px 1000px #1a1a1a inset !important;
+  box-shadow: 0 0 0px 1000px #1a1a1a inset !important;
+  -webkit-text-fill-color: #eee !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+
+/* Agrupaciones de dos campos en fila */
+.fila-doble {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.fila-doble .campo {
+  flex: 1;
+  margin-bottom: 0; /* evita doble espaciado */
+}
+  
+  /* ========== RESPONSIVE ========== */
+  @media (max-width: 600px) {
+    .formulario-pago form {
+      padding: 2rem 1.5rem;
+    }
+  
+    .formulario-pago .btn {
+      padding: 0.9rem;
+      font-size: 0.95rem;
+    }
+  
+    .botones-pago {
+      flex-direction: column;
+    }
+  }
+
+  /* Responsive: apilar campos en móviles */
+@media (max-width: 768px) {
+  .fila-doble {
+    flex-direction: column;
+  }
+}
