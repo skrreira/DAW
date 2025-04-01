@@ -16,8 +16,8 @@
   height: 100%;
   width: 100%;
   background-image: url('/metal_gym/images/tarifas/black-bg.png');
-  background-size: auto;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   opacity: 0.96;
   z-index: 0;
@@ -35,119 +35,137 @@
   z-index: 1;
 }
 
-  
-  /* Intro */
-  .tarifas-intro {
-    background: transparent; /* elimina el fondo oscuro */
-    padding: 1.5rem;
-    max-width: 800px;
-    margin: 0 auto 4rem;
-    backdrop-filter: none; /* por si había desenfoque */
-  }
 
-  
-  .tarifas-intro p {
-    background: rgba(0, 0, 0, 0.25); /* más sutil */
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-radius: 20px;
-    padding: 2rem 3rem;
-    color: #f1f1f1;
-    max-width: 1000px;
-    margin: 0 auto;
-    font-size: 1.125rem;
-    line-height: 1.8;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+/* Intro */
+.tarifas-intro {
+  background: transparent;
+  /* elimina el fondo oscuro */
+  padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+  backdrop-filter: none;
+  /* por si había desenfoque */
+}
 
-  .tarifas-intro p:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 40px rgba(255, 0, 0, 0.15);
-  }
 
-  
-  
-  /* Grid de planes */
-  .planes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 2rem;
-    max-width: 1100px;
-    margin: 0 auto;
+.tarifas-intro p {
+  background: rgba(0, 0, 0, 0.25);
+  /* más sutil */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem 3rem;
+  color: #f1f1f1;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  line-height: 1.8;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarifas-intro p:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.15);
+}
+
+
+
+/* Grid de planes */
+.planes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Tarjeta individual */
+.plan {
+  background: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+/* Precio */
+.precio {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.precio span {
+  font-size: 1rem;
+  color: #999;
+}
+
+/* Botón */
+.plan {
+  background: linear-gradient(to bottom, #1a1a1a, #121212);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+
+.plan .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: linear-gradient(135deg, #a71d2a, #d1344f);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.plan .btn:hover {
+  background-color: #8e1a24;
+}
+
+/* Recomendado */
+.plan-recomendada {
+  border: 2px solid #a71d2a;
+  background-color: #222;
+}
+
+.plan-recomendada .etiqueta {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #a71d2a;
+  color: white;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.tarifas section,
+.tarifas header {
+  animation: fadeInUp 0.7s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
   }
-  
-  /* Tarjeta individual */
-  .plan {
-    background: #1a1a1a;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 2rem;
-    position: relative;
-    transition: transform 0.3s ease;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .plan:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
-  }
-  
-  /* Precio */
-  .precio {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin: 1rem 0;
-  }
-  
-  .precio span {
-    font-size: 1rem;
-    color: #999;
-  }
-  
-  /* Botón */
-  .plan {
-    background: linear-gradient(to bottom, #1a1a1a, #121212);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    border-radius: 12px;
-    padding: 2rem;
-    position: relative;
-    transition: transform 0.3s ease;
-  }
-  
-  
-  .plan .btn {
-    display: inline-block;
-    margin-top: 1rem;
-    background: linear-gradient(135deg, #a71d2a, #d1344f);
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .plan .btn:hover {
-    background-color: #8e1a24;
-  }
-  
-  /* Recomendado */
-  .plan-recomendada {
-    border: 2px solid #a71d2a;
-    background-color: #222;
-  }
-  
-  .plan-recomendada .etiqueta {
-    position: absolute;
-    top: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #a71d2a;
-    color: white;
-    font-size: 0.75rem;
-    padding: 4px 10px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  
+}

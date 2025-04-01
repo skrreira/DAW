@@ -147,8 +147,23 @@
     background-color: var(--color-primario);
 }
 
+.contenido .btn,
+.contenido div,
+.contenido h1 {
+    animation: fadeInUp 0.7s ease-out;
+}
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* Móviles grandes (pequeño son 480) */
 @media (max-width: 1080px) { 
