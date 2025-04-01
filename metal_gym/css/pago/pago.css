@@ -98,21 +98,21 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s ease;
-    background-color: #a71d2a;
+    background-color: rgb(77, 131, 68);
     color: white;
     text-transform: uppercase;
   }
   
   .formulario-pago .btn:hover {
-    background-color: #8e1a24;
+    background-color: rgb(62, 105, 54);
   }
   
   .formulario-pago .btn.cancelar {
-    background-color: #444;
+    background-color: #a71d2a;
   }
   
   .formulario-pago .btn.cancelar:hover {
-    background-color: #555;
+    background-color: #8e1a24;
   }
 
   input:-webkit-autofill,
