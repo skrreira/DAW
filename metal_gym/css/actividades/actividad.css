@@ -1,13 +1,37 @@
 .hero {
-    background-size: cover;
-    background-position: center;  /* Centra la imagen de fondo */
+    background-image: url("/metal_gym/images/actividades/yoga/fondo_yoga_blur.png");
+    background-size: cover;               /* Mantiene proporción */
+    background-position: bottom center;   /* Alinea el fondo por abajo */
+    background-repeat: no-repeat;
+
+    min-height: 100vh;                    /* O lo que necesites para el diseño */
+    position: relative;                   /* Por si añades contenido posicionado */
+    overflow: visible;                    /* Asegura que no se oculte la parte que sobresale por arriba */
+    padding-bottom: 20%;
 }
+
+.carousel-centrado {
+    /* Para que el contenedor ocupe toda la altura de la ventana */
+    min-height: 100vh; 
+    background-size: cover;
+    background-position: center; /* Si quieres centrar la imagen de fondo */
+    
+    /* Flexbox para centrar vertical y horizontalmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Elimina o reduce el padding que empuja el contenido hacia arriba */
+    padding: 0; 
+    margin: 0;
+}
+
 
 .info {
     display: flex;
     gap: 20px;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
 }
 
 .texto h2 {
@@ -48,8 +72,8 @@
     justify-content: center;
     align-items: center;
 }
-
-.translucid p {
+.translucid > p,
+.translucid > * {
     background: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(15px);
     border-radius: 20px;
@@ -63,7 +87,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.translucid p:hover {
+.translucid > *:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 40px rgba(255, 0, 0, 0.05);
 }
@@ -126,7 +150,7 @@
 
 
 /* Móviles grandes (pequeño son 480) */
-@media (max-width: 768px) { 
+@media (max-width: 1080px) { 
     .info {
         flex-direction: column;
         align-items: center;
