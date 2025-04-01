@@ -2,7 +2,7 @@
   /* ========== FORMULARIO DE PAGO ========== */
   .formulario-pago {
     padding: 4rem 1.5rem;
-    padding-top: 5rem;
+    padding-bottom: 8rem;
     display: flex;
     justify-content: center;
     background: url('/metal_gym/images/pago/bg-pago.png') center/cover no-repeat;
@@ -10,16 +10,29 @@
     position: relative;
     z-index: 0;
   }
+
+  .formulario-pago p{
+    padding: 2rem 4rem;   
+    padding-top: 0rem;
+  }
   
   .formulario-pago form {
-    background: rgba(0, 0, 0, 0.55);
-    border-radius: 16px;
-    padding: 2.5rem 3rem;
+    background: rgba(0, 0, 0, 0.6); /* Más opaco para resaltar */
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 2rem;
     max-width: 1200px;
-    width: 100%;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  
+  .formulario-pago form:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.15);
+  }
+  
   
   .formulario-pago .campo {
     margin-bottom: 1.5rem;
