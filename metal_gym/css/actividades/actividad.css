@@ -1,5 +1,4 @@
 .hero {
-    background-image: url("/metal_gym/images/actividades/boxeo/fondo1.png");
     background-size: cover;
     background-position: center;  /* Centra la imagen de fondo */
 }
@@ -24,7 +23,7 @@
     text-align: justify;
     padding: 5%;
     color: white;
-    font-size: min(2vw, 30px);
+    font-size: 1.2rem;
 }
 
 .columna {
@@ -38,9 +37,38 @@
     aspect-ratio: 1 / 1;
     object-fit: cover; /* Opcional: recorta la imagen si no es cuadrada */
     flex-shrink: 0;
+    border-radius: 20%;
 }
 
-/* 📌 Estilos para el carrousel */
+/* Elemento translucido */
+.translucid {
+    background: transparent;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.translucid p {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    color: #f1f1f1;
+    max-width: 1000px;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.translucid p:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.05);
+}
+
+/* Estilos para el carrousel */
 .caroussel {
     width: 80%;
     overflow: hidden;
@@ -55,18 +83,46 @@
 }
 
 .cta {
-    margin-top: 30px;
+    margin: 30px 0px 50px 0px;
     padding: 15px 30px; /* Aumenta el espacio interno */
     font-size: min (2vh, 30px); /* Tamaño de texto más grande */
+    display: inline-block;     /* mantiene el ancho natural del contenido */
+    text-align: center;
 }
-
 
 .translucid{
   position: relative;
   z-index: 1;
 }
 
+.carousel-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
 
+.carousel-inner img {
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Indicadores bonitos */
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 5px;
+    background-color: #fff;
+    opacity: 0.5;
+    border-radius: 10px;
+    margin: 0 4px;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: var(--color-primario);
+}
 
 
 /* Móviles grandes (pequeño son 480) */
@@ -82,7 +138,6 @@
 
     #icono {
         width: 80%;
-        
         height: auto;
         flex-shrink: 0;
     }
