@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,28 @@
     <link rel="stylesheet" href="/metal_gym/css/general.css"> <!-- Enlace al CSS -->
     <link rel="stylesheet" href="/metal_gym/css/pago/pago.css"> <!-- Enlace al CSS -->
 </head>
+
 <body>
 
     <!-- Encabezado con navegación -->
     <header>
-        <nav>
+        <nav class="nav-container">
+            <!-- Logo -->
             <h1 class="nav-logo">
-                <a href="/index.html">Metal Gym</a>
+                <a href="/index.html" id="id-logo">Metal Gym</a>
             </h1>
-            <ul class="nav-links">
+
+            <!-- Botón hamburguesa -->
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- Código HTML para ☰ -->
+            </div>
+
+            <!-- Menú de navegación -->
+            <ul class="nav-links" id="nav-links">
                 <li><a href="/metal_gym/pages/actividades/nuestras-actividades.html">Actividades</a></li>
                 <li><a href="/metal_gym/pages/tarifas.html">Tarifas</a></li>
                 <li><a href="/metal_gym/pages/contacto.html">Contacto</a></li>
-                <li><a href="/metal_gym/pages/pago.html" class="cta">Únete</a></li> <!-- Botón destacado -->
+                <li><a href="/metal_gym/pages/pago.html" class="cta">Únete</a></li>
             </ul>
         </nav>
     </header>
@@ -27,65 +37,65 @@
     <!-- Sección de Formulario de Pago -->
     <!-- Sección de Formulario de Pago -->
     <section class="formulario-pago">
-        
+
         <form>
             <h1>¡YA CASI ESTÁ!</h1>
             <p>
-                ¿Tienes alguna pregunta o necesitas más información? Estamos aquí para ayudarte. 
+                ¿Tienes alguna pregunta o necesitas más información? Estamos aquí para ayudarte.
                 No dudes en ponerte en contacto con nosotros y te responderemos lo antes posible.
             </p>
-        <!-- Fila: Nombre + Mes -->
-        <div class="fila-doble">
-            <div class="campo">
-            <label for="nombre">Nombre y apellidos</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana García" required>
+            <!-- Fila: Nombre + Mes -->
+            <div class="fila-doble">
+                <div class="campo">
+                    <label for="nombre">Nombre y apellidos</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana García" required>
+                </div>
+                <div class="campo">
+                    <label for="mes">Mes a pagar</label>
+                    <input type="month" id="mes" name="mes" required>
+                </div>
             </div>
-            <div class="campo">
-            <label for="mes">Mes a pagar</label>
-            <input type="month" id="mes" name="mes" required>
+
+            <!-- Fila: Email + Teléfono -->
+            <div class="fila-doble">
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Ej: ana@email.com" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono de contacto</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +34 678 123 456" required>
+                </div>
             </div>
-        </div>
-    
-        <!-- Fila: Email + Teléfono -->
-        <div class="fila-doble">
-            <div class="campo">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" placeholder="Ej: ana@email.com" required>
+
+            <!-- Fila: Tarifa + Precio -->
+            <div class="fila-doble">
+                <div class="campo">
+                    <label for="tarifa">Tarifa</label>
+                    <select id="tarifa" name="tarifa" required>
+                        <option disabled selected value="">Selecciona una opción</option>
+                        <option value="basico">Plan Básico - 20€/mes</option>
+                        <option value="estandar">Plan Estándar - 30€/mes</option>
+                        <option value="premium">Plan Premium - 50€/mes</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="precio">Precio</label>
+                    <input type="text" id="precio" name="precio" placeholder="Se rellenará automáticamente" readonly>
+                </div>
             </div>
-            <div class="campo">
-            <label for="telefono">Teléfono de contacto</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +34 678 123 456" required>
+
+            <!-- Botones -->
+            <div class="botones-pago">
+                <button type="submit" class="btn">Proceder al pago</button>
+                <button type="button" class="btn cancelar">Cancelar</button>
             </div>
-        </div>
-    
-        <!-- Fila: Tarifa + Precio -->
-        <div class="fila-doble">
-            <div class="campo">
-            <label for="tarifa">Tarifa</label>
-            <select id="tarifa" name="tarifa" required>
-                <option disabled selected value="">Selecciona una opción</option>
-                <option value="basico">Plan Básico - 20€/mes</option>
-                <option value="estandar">Plan Estándar - 30€/mes</option>
-                <option value="premium">Plan Premium - 50€/mes</option>
-            </select>
-            </div>
-            <div class="campo">
-            <label for="precio">Precio</label>
-            <input type="text" id="precio" name="precio" placeholder="Se rellenará automáticamente" readonly>
-            </div>
-        </div>
-    
-        <!-- Botones -->
-        <div class="botones-pago">
-            <button type="submit" class="btn">Proceder al pago</button>
-            <button type="button" class="btn cancelar">Cancelar</button>
-        </div>
         </form>
     </section>
-    
-      
-    
-    
+
+
+
+
     <!-- Footer -->
     <footer>
         <section class="footer-container">
@@ -143,5 +153,8 @@
         <p>© 2024 Todos los derechos reservados</p>
     </footer>
 
+    <!-- Scripts -->
+    <script src="/metal_gym/js/general.js"></script>
 </body>
+
 </html>

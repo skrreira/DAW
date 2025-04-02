@@ -312,3 +312,85 @@ footer p {
     background-color: #A71D2A;
     cursor: pointer;
 }
+
+/* Logo */
+#id-logo {
+    transition: color 0.3s ease;
+}
+
+#id-logo:hover {
+    color: #D72638;
+}
+
+/* Botón hamburguesa oculto por defecto */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+    color: #a71d2a;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 1rem 2rem;
+}
+
+.nav-logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Estado inicial del menú en móviles */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        background-color: #1a1a1a;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        z-index: 10;
+        padding: 0;
+        overflow: hidden;
+        max-height: 0;
+        /* Oculto por defecto */
+        opacity: 0;
+        transition: max-height 0.8s ease, opacity 0.8s ease;
+    }
+
+    /* Cuando el menú está activo */
+    .nav-links.active {
+        padding: 1rem 2rem;
+        max-height: 500px;
+        /* Altura suficiente para los enlaces */
+        opacity: 1;
+    }
+
+}

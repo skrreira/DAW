@@ -15,15 +15,23 @@
 
     <!-- Encabezado con navegación -->
     <header>
-        <nav>
+        <nav class="nav-container">
+            <!-- Logo -->
             <h1 class="nav-logo">
-                <a href="/index.html">Metal Gym</a>
+                <a href="/index.html" id="id-logo">Metal Gym</a>
             </h1>
-            <ul class="nav-links">
+
+            <!-- Botón hamburguesa -->
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- Código HTML para ☰ -->
+            </div>
+
+            <!-- Menú de navegación -->
+            <ul class="nav-links" id="nav-links">
                 <li><a href="/metal_gym/pages/actividades/nuestras-actividades.html">Actividades</a></li>
                 <li><a href="/metal_gym/pages/tarifas.html">Tarifas</a></li>
                 <li><a href="/metal_gym/pages/contacto.html">Contacto</a></li>
-                <li><a href="/metal_gym/pages/pago.html" class="cta">Únete</a></li> <!-- Botón destacado -->
+                <li><a href="/metal_gym/pages/pago.html" class="cta">Únete</a></li>
             </ul>
         </nav>
     </header>
@@ -165,7 +173,8 @@
         <!-- Derechos reservados -->
         <p>© 2024 Todos los derechos reservados</p>
     </footer>
-
+    <!-- Scripts -->
+    <script src="/metal_gym/js/general.js"></script>
 </body>
 
 </html>

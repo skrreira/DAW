@@ -312,7 +312,7 @@ input:-webkit-autofill:active {
 }
 
 
-.hero > * {
+.hero>* {
     animation: fadeInUp 0.7s ease-out;
 }
 
@@ -327,3 +327,4 @@ input:-webkit-autofill:active {
         transform: translateY(0);
     }
 }
+
