@@ -14,29 +14,29 @@
 
 <body>
 
-<!-- Encabezado con navegación -->
-<header>
-    <nav class="nav-container">
-      <!-- Logo -->
-      <h1 class="nav-logo">
-        <a href="/index.html" id="id-logo">Metal Gym</a>
-      </h1>
-  
-      <!-- Botón hamburguesa -->
-      <div class="menu-toggle" id="menu-toggle">
-        &#9776; <!-- Código HTML para ☰ -->
-      </div>
-  
-      <!-- Menú de navegación -->
-      <ul class="nav-links" id="nav-links">
-        <li><a href="/metal_gym/pages/actividades/nuestras-actividades.html">Actividades</a></li>
-        <li><a href="/metal_gym/pages/tarifas.html">Tarifas</a></li>
-        <li><a href="/metal_gym/pages/contacto.html">Contacto</a></li>
-        <li><a href="/metal_gym/pages/pago.html" class="cta">Únete</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+    <!-- Encabezado con navegación -->
+    <header>
+        <nav class="nav-container">
+            <!-- Logo -->
+            <h1 class="nav-logo">
+                <a href="/index.html" id="id-logo">Metal Gym</a>
+            </h1>
+
+            <!-- Botón hamburguesa -->
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- Código HTML para ☰ -->
+            </div>
+
+            <!-- Menú de navegación -->
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/metal_gym/pages/actividades/nuestras-actividades.html">Actividades</a></li>
+                <li><a href="/metal_gym/pages/tarifas.html">Tarifas</a></li>
+                <li><a href="/metal_gym/pages/contacto.html">Contacto</a></li>
+                <li><a href="/metal_gym/pages/pago.html" class="cta">Únete</a></li>
+            </ul>
+        </nav>
+    </header>
+
 
     <!-- Sección Hero (Imagen principal y mensaje motivacional) -->
     <section class="hero">
@@ -237,69 +237,15 @@
             </header>
 
             <div class="row justify-content-center g-4">
-                <!-- Reseña 1 -->
-                <article class="col-md-4">
-                    <div class="card reseña-card shadow-sm">
-                        <div class="card-body">
-                            <div class="stars text-warning mb-2">⭐️⭐️⭐️⭐️⭐️</div>
-                            <h5 class="card-title fw-bold">El mejor gimnasio de Medina del Campo</h5>
-                            <p class="card-text">He probado varios gimnasios en la ciudad, pero ninguno ofrece las
-                                instalaciones y el ambiente de Metal Gym. Los entrenadores son profesionales y siempre
-                                están dispuestos a ayudar. Además, el equipamiento está en excelente estado.</p>
-                            <footer id="autor_resena" class="d-flex align-items-center mt-4">
-                                <img src="/metal_gym/images/landing/avatar1.png" alt="Sara" class="rounded-circle me-2"
-                                    width="32" height="32">
-                                <div class="text-start">
-                                    <strong class="d-block">Sara Lucía</strong>
-                                    <small class="text-muted">06/10/2024</small>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </article>
+                
+                <!-- Contenedor de opiniones -->
+                <div class="row justify-content-center g-4" id="opiniones-container">
+                    <!-- Aquí se insertarán las tarjetas de opiniones dinámicamente -->
+                </div>
 
-                <!-- Reseña 2 -->
-                <article class="col-md-4">
-                    <div class="card reseña-card shadow-sm">
-                        <div class="card-body">
-                            <div class="stars text-warning mb-2">⭐️⭐️⭐️⭐️⭐️</div>
-                            <h5 class="card-title fw-bold">Un gimnasio moderno, con muchas actividades a nuestra
-                                disposición</h5>
-                            <p class="card-text">Metal Gym cuenta con una variedad impresionante de clases y
-                                actividades. Desde entrenamientos funcionales hasta yoga, siempre hay algo nuevo que
-                                probar. Las instalaciones son de primer nivel, y el ambiente siempre es motivador.</p>
-                            <footer id="autor_resena" class="d-flex align-items-center mt-4">
-                                <img src="/metal_gym/images/landing/avatar2.png" alt="Pablo" class="rounded-circle me-2"
-                                    width="32" height="32">
-                                <div class="text-start">
-                                    <strong class="d-block">Pablo Seijo</strong>
-                                    <small class="text-muted">08/10/2024</small>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </article>
+                <!-- Botón para cargar más opiniones -->
+                <button id="btn-load-opinions" class="btn btn-danger mt-4">Ver más opiniones</button>
 
-                <!-- Reseña 3 -->
-                <article class="col-md-4">
-                    <div class="card reseña-card shadow-sm">
-                        <div class="card-body">
-                            <div class="stars text-warning mb-2">⭐️⭐️⭐️⭐️⭐️</div>
-                            <h5 class="card-title fw-bold">Los mejores entrenadores posibles</h5>
-                            <p class="card-text">Los entrenadores de Metal Gym realmente se preocupan por tu progreso.
-                                Siempre están pendientes de corregir tu técnica y darte consejos personalizados. Se nota
-                                que tienen mucha experiencia y pasión por lo que hacen.</p>
-                            <footer id="autor_resena" class="d-flex align-items-center mt-4">
-                                <img src="/metal_gym/images/landing/avatar3.png" alt="Eva" class="rounded-circle me-2"
-                                    width="32" height="32">
-                                <div class="text-start">
-                                    <strong class="d-block">Eva García</strong>
-                                    <small class="text-muted">01/09/2024</small>
-                                </div>
-                            </footer>
-                        </div>
-                    </div>
-                </article>
             </div>
         </div>
     </section>
@@ -448,7 +394,10 @@
     </footer>
 
     <!-- Scripts -->
+    <!-- jQuery desde CDN (versión estable) -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="/metal_gym/js/general.js"></script>
+    <script src="/metal_gym/js/landing-page.js"></script>
 </body>
 
 </html>
