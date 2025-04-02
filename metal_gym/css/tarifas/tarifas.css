@@ -169,3 +169,30 @@
     transform: translateY(0);
   }
 }
+
+/* Transición para todas las tarjetas */
+.plan {
+  background: linear-gradient(to bottom, #1a1a1a, #121212);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 2rem;
+  position: relative;
+  transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Cuando ningún plan está "activo", no se aplica filtro */
+.planes-grid:not(.active-hover) .plan {
+  filter: none;
+}
+
+/* Estado para la tarjeta sobre la que se pasa el ratón */
+.plan.active {
+  transform: scale(1.1) translateY(-10px);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+  filter: none;
+}
+
+/* Cuando se activa el hover en una tarjeta, las demás se desenfocan */
+.planes-grid.active-hover .plan:not(.active) {
+  filter: blur(4px);
+}
