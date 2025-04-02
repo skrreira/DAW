@@ -2,7 +2,7 @@
     {
       "nombre": "Sara Lucía",
       "fecha": "06/10/2024",
-      "avatar": "/metal_gym/images/landing/avatar1.png",
+      "avatar": "/metal_gym/assets/icons/avatar1.png",
       "estrellas": 5,
       "titulo": "El mejor gimnasio de Medina del Campo",
       "comentario": "He probado varios gimnasios, pero Metal Gym destaca por sus instalaciones modernas, entrenadores profesionales y equipamiento impecable."
@@ -10,7 +10,7 @@
     {
       "nombre": "Pablo Seijo",
       "fecha": "08/10/2024",
-      "avatar": "/metal_gym/images/landing/avatar2.png",
+      "avatar": "/metal_gym/assets/icons/avatar2.png",
       "estrellas": 5,
       "titulo": "Gimnasio moderno y variado",
       "comentario": "Metal Gym ofrece una amplia variedad de clases con instalaciones de primer nivel y un ambiente verdaderamente motivador."
@@ -18,7 +18,7 @@
     {
       "nombre": "Eva García",
       "fecha": "01/09/2024",
-      "avatar": "/metal_gym/images/landing/avatar3.png",
+      "avatar": "/metal_gym/assets/icons/avatar3.png",
       "estrellas": 5,
       "titulo": "Los mejores entrenadores",
       "comentario": "Los entrenadores se preocupan por tu progreso y ofrecen consejos personalizados, demostrando gran experiencia."
@@ -26,7 +26,7 @@
     {
       "nombre": "Juan Pérez",
       "fecha": "10/09/2024",
-      "avatar": "/metal_gym/images/landing/avatar4.png",
+      "avatar": "/metal_gym/assets/icons/avatar4.png",
       "estrellas": 4,
       "titulo": "Buen ambiente y atención",
       "comentario": "El ambiente y la atención en Metal Gym hacen que entrenar sea una experiencia muy agradable."
@@ -34,7 +34,7 @@
     {
       "nombre": "Laura Martínez",
       "fecha": "12/09/2024",
-      "avatar": "/metal_gym/images/landing/avatar5.png",
+      "avatar": "/metal_gym/assets/icons/avatar5.png",
       "estrellas": 5,
       "titulo": "Experiencia transformadora",
       "comentario": "Desde que me uní, he notado mejoras en mi salud y energía; sin duda, una experiencia transformadora."
@@ -42,7 +42,7 @@
     {
       "nombre": "Carlos López",
       "fecha": "15/09/2024",
-      "avatar": "/metal_gym/images/landing/avatar6.png",
+      "avatar": "/metal_gym/assets/icons/avatar6.png",
       "estrellas": 4,
       "titulo": "Muy completo",
       "comentario": "El gimnasio cuenta con tecnología de última generación y entrenadores atentos que marcan la diferencia."
@@ -50,7 +50,7 @@
     {
       "nombre": "Marta Sánchez",
       "fecha": "20/09/2024",
-      "avatar": "/metal_gym/images/landing/avatar7.png",
+      "avatar": "/metal_gym/assets/icons/avatar7.png",
       "estrellas": 5,
       "titulo": "Recomendado para todos",
       "comentario": "El ambiente motivador y la calidad del servicio hacen de Metal Gym la opción ideal para entrenar."
@@ -58,7 +58,7 @@
     {
       "nombre": "Alberto Ruiz",
       "fecha": "22/09/2024",
-      "avatar": "/metal_gym/images/landing/avatar8.png",
+      "avatar": "/metal_gym/assets/icons/avatar8.png",
       "estrellas": 3,
       "titulo": "Bien, pero se puede mejorar",
       "comentario": "Aunque el gimnasio a veces se llena, la calidad de las instalaciones y la atención son notables."
@@ -66,7 +66,7 @@
     {
       "nombre": "Carmen Fernández",
       "fecha": "25/09/2024",
-      "avatar": "/metal_gym/images/landing/avatar9.png",
+      "avatar": "/metal_gym/assets/icons/avatar9.png",
       "estrellas": 5,
       "titulo": "Inmejorable",
       "comentario": "Metal Gym ofrece atención personalizada e instalaciones de alta calidad, siendo insuperable en el sector."
