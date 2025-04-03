@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    background-image: url('/metal_gym/images/landing/hero.png');
+    background-image: url('/metal_gym/assets/images/landing/hero.png');
     /* Reemplaza con la ruta correcta */
     background-size: cover;
     background-position: center;
@@ -211,7 +211,7 @@
 }
 
 .reseñas-section {
-    background: url('/metal_gym/images/landing/resenas-bg.png') no-repeat center center / cover;
+    background: url('/metal_gym/assets/images/landing/resenas-bg.png') no-repeat center center / cover;
     position: relative;
 }
 
@@ -298,7 +298,7 @@ input:-webkit-autofill:active {
 
 /* Imagen de fondo con overlay oscuro */
 .cta-final {
-    background-image: url('/metal_gym/images/landing/final_cta.png');
+    background-image: url('/metal_gym/assets/images/landing/final_cta.png');
     /* cambia a tu ruta */
     background-size: cover;
     background-position: center;

@@ -5,7 +5,7 @@
     padding-bottom: 8rem;
     display: flex;
     justify-content: center;
-    background: url('/metal_gym/images/pago/bg-pago.png') center/cover no-repeat;
+    background: url('/metal_gym/assets/images/pago/bg-pago.png') center/cover no-repeat;
     background-attachment: fixed;
     position: relative;
     z-index: 0;

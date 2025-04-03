@@ -1,5 +1,5 @@
 .hero {
-    background-image: url("/metal_gym/images/actividades/yoga/fondo_yoga_blur.png");
+    background-image: url("/metal_gym/assets/images/actividades/yoga/fondo_yoga_blur.png");
     background-size: cover;               /* Mantiene proporción */
     background-position: bottom center;   /* Alinea el fondo por abajo */
     background-repeat: no-repeat;

@@ -17,7 +17,7 @@
   }
   
   .seccion-contacto {
-    background: url('/metal_gym/images/contacto/bg-contacto.png') center/cover no-repeat;
+    background: url('/metal_gym/assets/images/contacto/bg-contacto.png') center/cover no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;

@@ -1,6 +1,6 @@
 /* Hero de Actividades */
 .hero-actividades {
-    background: url("/metal_gym/images/actividades/fondo-actividades-hero-blur.png") bottom/cover no-repeat;
+    background: url("/metal_gym/assets/actividades/fondo-actividades-hero-blur.png") bottom/cover no-repeat;
     height: 100vh;
     max-height: 1000px;
     min-height: 700px;
@@ -32,7 +32,7 @@
     column-count: 3;
     column-gap: 30px;
     padding: 15% 5%;
-    background-image: url("/metal_gym/images/actividades/fondo-actividades.png");
+    background-image: url("/metal_gym/assets/images/actividades/fondo-actividades.png");
     background-size: cover;
     background-position: top;
 }
