@@ -297,18 +297,27 @@ footer p {
 }
 
 .footer-logo p {
-    font-weight: bold;
-    text-align: center;
-    margin-top: 30px;   
-    padding: 15px 0;
+    display: inline-block;
     background-color: var(--color-primario);
-    border-radius: 3px;
     color: white;
-    font-size: 0.9rem;
-    transition: background 0.15s;
-}
-
-.footer-logo p:hover {
-    background-color: #A71D2A;
+    padding: 14px 26px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    max-width: 300px;
+    margin-top: 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 transparent;
+    border: 2px solid transparent;
+  }
+  
+  .footer-logo p:hover {
+    background-color: #a71d2a;
+    color: white;
     cursor: pointer;
-}
+    box-shadow: 0 0 15px rgba(215, 38, 56, 0.45), 0 0 30px rgba(215, 38, 56, 0.15) inset;
+    transform: scale(1.03);
+  }
+
