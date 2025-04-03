@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,32 @@
     <link rel="stylesheet" href="/metal_gym/css/general.css"> <!-- Enlace al CSS -->
     <link rel="stylesheet" href="/metal_gym/css/horarios/horarios.css"> <!-- Enlace al CSS -->
 </head>
+
 <body>
 
     <!-- Encabezado con navegación -->
     <header>
-        <nav>
-            <h1 class="nav-logo">
-                <a href="/index.html">Metal Gym</a>
-            </h1>
-            <ul class="nav-links">
+        <nav class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo" role="banner">
+                <a href="/index.html" id="id-logo">Metal Gym</a>
+            </div>
+
+            <!-- Botón hamburguesa -->
+            <div class="menu-toggle" id="menu-toggle">
+                &#9776; <!-- Código HTML para ☰ -->
+            </div>
+
+            <!-- Menú de navegación -->
+            <ul class="nav-links" id="nav-links">
                 <li><a href="/metal_gym/pages/actividades/nuestras-actividades.html">Actividades</a></li>
                 <li><a href="/metal_gym/pages/tarifas.html">Tarifas</a></li>
                 <li><a href="/metal_gym/pages/contacto.html">Contacto</a></li>
-                <li><a href="/metal_gym/pages/pago.html" class="cta">Únete</a></li> <!-- Botón destacado -->
+                <li><a href="/metal_gym/pages/pago.html" class="cta">Únete</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <!-- Sección Hero de Horarios -->
     <section class="hero-horarios">
         <div class="contenido-horarios">
@@ -32,91 +42,30 @@
         </div>
     </section>
 
-        <!-- Sección de Tabla de Horarios -->
+    <!-- Sección de Tabla de Horarios -->
     <section class="tabla-horarios">
         <table>
-        <thead>
-            <tr>
-            <th>Día</th>
-            <th>Lun</th>
-            <th>Mar</th>
-            <th>Mié</th>
-            <th>Jue</th>
-            <th>Vie</th>
-            <th>Sáb</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-            <td>09:00</td>
-            <td data-actividad="Boxeo"><a href="/metal_gym/pages/actividades/boxeo.html">Boxeo</a></td>
-            <td></td>
-            <td data-actividad="Boxeo"><a href="/metal_gym/pages/actividades/boxeo.html">Boxeo</a></td>
-            <td></td>
-            <td data-actividad="Boxeo"><a href="/metal_gym/pages/actividades/boxeo.html">Boxeo</a></td>
-            <td></td>
-            </tr>
-            <tr>
-            <td>11:00</td>
-            <td data-actividad="Yoga"><a href="/metal_gym/pages/actividades/yoga.html">Yoga</a></td>
-            <td data-actividad="Yoga"><a href="/metal_gym/pages/actividades/yoga.html">Yoga</a></td>
-            <td></td>
-            <td data-actividad="Yoga"><a href="/metal_gym/pages/actividades/yoga.html">Yoga</a></td>
-            <td></td>
-            <td data-actividad="Yoga"><a href="/metal_gym/pages/actividades/yoga.html">Yoga</a></td>
-            </tr>
-            <tr>
-            <td>13:00</td>
-            <td></td>
-            <td data-actividad="BJJ"><a href="/metal_gym/pages/actividades/bjj.html">BJJ</a></td>
-            <td></td>
-            <td data-actividad="Boxeo"><a href="/metal_gym/pages/actividades/boxeo.html">Boxeo</a></td>
-            <td></td>
-            <td data-actividad="Yoga"><a href="/metal_gym/pages/actividades/yoga.html">Yoga</a></td>
-            </tr>
-            <tr>
-            <td>15:00</td>
-            <td data-actividad="BJJ"><a href="/metal_gym/pages/actividades/bjj.html">BJJ</a></td>
-            <td></td>
-            <td data-actividad="Yoga"><a href="/metal_gym/pages/actividades/yoga.html">Yoga</a></td>
-            <td></td>
-            <td data-actividad="BJJ"><a href="/metal_gym/pages/actividades/bjj.html">BJJ</a></td>
-            <td></td>
-            </tr>
-            <tr>
-            <td>17:00</td>
-            <td></td>
-            <td data-actividad="Boxeo"><a href="/metal_gym/pages/actividades/boxeo.html">Boxeo</a></td>
-            <td></td>
-            <td data-actividad="Yoga"><a href="/metal_gym/pages/actividades/yoga.html">Yoga</a></td>
-            <td></td>
-            <td data-actividad="Boxeo"><a href="/metal_gym/pages/actividades/boxeo.html">Boxeo</a></td>
-            </tr>
-            <tr>
-            <td>19:00</td>
-            <td data-actividad="Yoga"><a href="/metal_gym/pages/actividades/yoga.html">Yoga</a></td>
-            <td></td>
-            <td data-actividad="Yoga"><a href="/metal_gym/pages/actividades/yoga.html">Yoga</a></td>
-            <td></td>
-            <td data-actividad="Yoga"><a href="/metal_gym/pages/actividades/yoga.html">Yoga</a></td>
-            <td></td>
-            </tr>
-            <tr>
-            <td>21:00</td>
-            <td data-actividad="BJJ"><a href="/metal_gym/pages/actividades/bjj.html">BJJ</a></td>
-            <td data-actividad="BJJ"><a href="/metal_gym/pages/actividades/bjj.html">BJJ</a></td>
-            <td data-actividad="Boxeo"><a href="/metal_gym/pages/actividades/boxeo.html">Boxeo</a></td>
-            <td></td>
-            <td data-actividad="BJJ"><a href="/metal_gym/pages/actividades/bjj.html">BJJ</a></td>
-            <td></td>
-            </tr>
-        </tbody>
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Lun</th>
+                    <th>Mar</th>
+                    <th>Mié</th>
+                    <th>Jue</th>
+                    <th>Vie</th>
+                    <th>Sáb</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los datos se cargarán dinámicamente desde el archivo XML -->
+            </tbody>
         </table>
     </section>
-    
-          
 
-    
+
+
+
+
     <!-- Footer -->
     <footer>
         <section class="footer-container">
@@ -174,5 +123,9 @@
         <p>© 2024 Todos los derechos reservados</p>
     </footer>
 
+    <!-- Scripts -->
+    <script src="/metal_gym/js/general.js"></script>
+    <script src="/metal_gym/js/horarios/horarios.js"></script>
 </body>
+
 </html>

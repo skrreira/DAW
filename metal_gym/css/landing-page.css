@@ -1,6 +1,6 @@
 .hero {
     position: relative;
-    background-image: url('/metal_gym/assets/images/hero.png');
+    background-image: url('/metal_gym/images/landing/hero.png');
     /* Reemplaza con la ruta correcta */
     background-size: cover;
     background-position: center;
@@ -314,7 +314,7 @@ input:-webkit-autofill:active {
 }
 
 
-.hero > * {
+.hero>* {
     animation: fadeInUp 0.7s ease-out;
 }
 
